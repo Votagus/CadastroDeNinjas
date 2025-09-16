@@ -29,9 +29,14 @@ public class NinjaModel {
 
     private int idade;
 
+    @Column(name = "img_url")
+    private String imgUrl;
+
     //@ManyToOne - Um ninja tem uma única missão
     @ManyToOne
-    @JoinColumn(name = "missoes_id") //Foreign Key
+    /*Foreign Key - Cria uma chave estrageira na tabela de ninjas com base no ID das missões*/
+    @JoinColumn(name = "missoes_id")
+    /*O ORM identifica o contexto com base no Objeto Missoes criado a seguir com tipo MissoesModel*/
     private MissoesModel missoes;
 
 

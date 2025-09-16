@@ -24,7 +24,9 @@ public class MissoesModel {
 
 
     // @OneToMany - Uma missão pode ter vários ninjas
+    /*Aqui vai vai ser indicado o equivalente desse vinculo na classe ninja (mappedBy = "missoes")*/
     @OneToMany(mappedBy = "missoes")
+
     private List<NinjaModel> ninjas;
 
 }
