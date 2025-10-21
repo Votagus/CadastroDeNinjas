@@ -40,5 +40,4 @@ public class NinjaModel {
     private MissoesModel missoes;
 
 
-
 }
